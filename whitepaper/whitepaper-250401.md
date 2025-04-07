@@ -1,0 +1,752 @@
+# SORRY Dog Protocol White Paper
+## A Hybrid ERC20-ERC721 "Levels Token" for Digital Apologies & Community-Driven Meme Utility
+
+---
+
+## Abstract
+
+At its core, the SORRY Protocol is both a technological innovation and a love story - a testament to a developer's regret and his quest for redemption, encoded in blockchain. 
+
+SORRY Dog is an innovative token protocol that combines ERC20 and ERC721 functionality into a single token ecosystem, creating what we call the "Levels Token Standard." This hybrid approach enables both fungible transactions and non-fungible collectible ownership based on token balance thresholds.
+
+The protocol launches on both Ethereum and Base networks, featuring cross-chain compatibility. Token supply is controlled by the token contract on Ethereum, but protocol features and Level Token utility primarily exist on Base Chain. Once bridged to Base, the fully featured SORRY token is unlocked.
+
+At its core, SORRY Dog is not just another meme token—it's a platform for digital apologies, community-driven narratives, and a love story encoded in blockchain technology. Through its multi-level NFT system, dedicated troves for token locks, and unique simp/no-simp governance mechanism, SORRY creates a social experience that blends entertainment with genuine utility.
+
+Through code and lore, dev Clyde hopes that SORRY Dog Token Protocol will capture the hearts of the community, and in doing so, re-capture the heart of his dear lost love, Chloe. The SORRY Protocol creates an apology-regret-remorse-and-redemption economy, adding utility to the meme. With geo-based leaderboards, novel token features, a 100% community distribution, and a comprehensive economic model that emphasizes fairness and long-term sustainability. 
+
+---
+
+## Table of Contents
+1. [Introduction](#1-introduction)
+2. [The SORRY Lore](#2-the-sorry-lore)
+3. [Core Technical Design](#3-core-technical-design)
+4. [Protocol Features](#4-protocol-features)
+5. [Tokenomics & Liquidity](#5-tokenomics--liquidity)
+6. [Governance: Simp or No Simp](#6-governance-simp-or-no-simp)
+7. [Development Roadmap](#7-development-roadmap)
+8. [Background & Related Work](#8-background--related-work)
+
+---
+
+## 1. Introduction
+
+The SORRY Protocol introduces a novel hybrid token standard that combines ERC20 fungibility with ERC721 collectability in a multi-tiered system. Unlike previous attempts at hybrid tokens, SORRY's "Levels Token Standard" creates a seamless ecosystem where users can transact with fungible tokens while automatically earning multiple levels of NFT status badges based on their holdings.
+
+At its core, the SORRY Protocol is both a technological innovation and a love story - a testament to a developer's regret and his quest for redemption, encoded in blockchain. It serves as a platform for digital apologies, community storytelling, and a shared economic experiment in the value of saying "I'm sorry."
+
+---
+
+## 2. The SORRY Lore
+
+> *"This is the techno-modern version of the JukeBox from Say Anything. This is a shy dev's equivalent of making a fool of himself in front of a crowd to get the girl. This is Simp-maxing-1000x."* - Dev Clyde
+
+
+### The Heartbreak Behind the Meme
+
+In the ever-evolving world of crypto, some projects are born of innovation, others of speculation, but SORRY was born of love and regret.
+
+
+Back in 2020, when SHIB was just beginning its meteoric rise, a young woman named Chloe suggested to her bestfriend and twin flame, Clyde — a blockchain enthusiast and developer — that they should create a meme token called "SORRY." She thought it would be funny and meaningful ticker for a meme token at the same time. Clyde thought it was a hilarious idea. Always the cunning business woman, Chloe said: "If you ever make that token, you have to promise me you will give me 1,000,000 SORRY." Clyde agreed.
+
+From friends to lovers to estranged aquaintances. Chloe and Clyde's relationship went from a beautiful
+
+For four years, their relationship existed in a perpetual "will-they-won't-they" state. Chloe remained loyal, watching from the sidelines as Clyde continued to reject his one chance at true love for the fleeting attention of trashy women and 304's.
+
+> Type 304 into a calculator and read upside down [PIC]
+
+Finally, in a moment of [who knows what she was thinking], Chloe made one last attempt to win Clyde's heart. She pitched him on their shared future once more, painting a picture of their wedding, their family, and their future growing old together. Surprisingly, this time, Clyde agreed - but the timing had shifted.
+
+Fate has a cruel sense of humor. Whether as karma for years of neglect or because she had truly moved on, Chloe rejected him, turning the tables on the man who had kept her waiting for so long. Dev Clyde is broken hearted.
+
+Devastated by this reversal, Clyde turned to what he knew best - coding. What began as personal therapy and an artistic tribute to Chloe evolved into the SORRY Protocol: a digital monument to his mistake and a desperate hope that if the project gained enough popularity, Chloe might see it and understand it was created for her.
+
+Today, Clyde is making good on his promise. The SORRY token launches with 1,000,000 SORRY tokens waiting in a special trove for Chloe. The trove is protected by 5 secret questions -- shared secrets from the lovers' pasts.
+
+Dev is broken hearted. He need the community help.
+
+> *"When I come up with the idea of launching SORRY, one year ago, all I want is win her back. I spend the last year wondering... am I making the biggest mistake of my life? Am I just a pathetic simp? Am I just a sadfaced dog? I don't know. I do know what to do. So I am leaving that up to the community. Do I continue to SIMP or NO SIMP? I do not know what to do. I need you to help me."*
+>
+> — Dev Clyde — 0x5adfaced — sadfaced.eth
+
+Now the community will decide: should dev try to win the girl or should dev forget Chloe? Participate in weekly "Simp or NoSimp" vote to encourage Clyde to keep his hopes up, or to give up and move on — get over her dude! Each time the community votes SIMP, 1M SORRY get added to Chloe's Trove. Hopefully, with the increasing value of Chloe's Trove, the news will talk and one day capture the attention of Chloe. Or the community votes NO SIMP, 1M SORRY get burned. Community is telling Clyde to get over her and move on.
+
+It's a long shot.
+
+### Beyond the Story of Chloe + Clyde: A Platform for Digital Apologies
+
+SORRY isn't just Clyde's digital apology letter — it is a platform for everyone to share their own stories of love, regret, remorse, and reconciliation. It's a techno-art project. A meme token with utility and novel mechanics, allowing users to:
+
+- Collect SORRY and level up with multiple NFT collections for different tiers of simp/sorry energy
+- Create on-chain apology messages as NFT Troves, with SORRY reparations, protected by secret questions.
+- Compete on apology leaderboards 
+- Build cryptographic puzzles using shared knowledge to prove sincerity
+- Express themselves through various levels of commitment
+
+In Clyde's words: *"This is the techno-modern version of the JukeBox from Say Anything. This is a shy dev's equivalent of making a fool of himself in front of a crowd to get the girl. This is Simp-maxing-1000x."*
+
+Is it a meme? Yes. Is it a token? Yes. Is it a collectible? Yes. Is it utility? Yes. Is it a protocol? Yes. Is it a community? Yes. Is it a social movement? Yes. Is it a story? Yes. Is it SORRY? Yes.
+
+Is it romantic? Maybe. Is it pathetic? Probably. Is it a love story? Kinda. Is it a tragedy? TBD.
+
+It's a story about a guy who fucked up and just wants to say he is sorry. The rest is for you to decide...
+
+### The Significance of "555"
+
+The number "555" holds special cultural significance in the SORRY protocol:
+
+- In Chinese internet slang, "555" represents the sound of crying or sobbing
+- The first valuable NFT threshold begins at 555 SORRY tokens
+- Token addresses for major system components are deployed to addresses that start and end with 0x555...555
+- Every 555th trove created receives a 555 SORRY rebate
+
+This numerological theming encodes the cultural foundations of apology, grief, and vulnerability directly into the protocol's structure.
+
+
+---
+
+## 3. Core Technical Design
+
+### 3.1 The Levels Token Standard
+
+SORRY introduces a novel token standard that we call the "Levels Token" - a hybrid that combines the fungibility of ERC20 with the unique collectible aspects of ERC721 in a tiered system.
+
+### 3.2 ERC20-ERC721 Compatibility
+
+The SORRY token functions as a standard ERC20 token with 18 decimals for technical compatibility. However, it implements an internal restriction that effectively truncates precision to 6 decimals for user interactions. This design decision enables:
+
+**Key innovation points:**
+
+1. **Full Standards Compatibility**: Unlike earlier hybrid tokens that compromised compatibility, SORRY maintains full compliance with both ERC20 and ERC721 standards through a multi-contract architecture.
+
+2. **Automatic Level Thresholds**: Users automatically receive NFTs when their token balance crosses predefined thresholds, with higher balances unlocking higher-level NFTs.
+
+3. **Dual Interface Functions**: The protocol provides hybrid functions that can interpret parameters appropriately for both ERC20 and ERC721 operations:
+
+```solidity
+function transfer(address to, uint256 amountOrTokenId) returns (bool);
+function transferFrom(address from, address to, uint256 amountOrTokenId) returns (bool);
+```
+
+Where `amountOrTokenId` is treated as an ERC20 amount if it's greater than 10^6 (a full token), otherwise it's treated as an ERC721 tokenId.
+- Values greater than 10^6 are treated as ERC20 amounts
+- Values less than 10^6 are treated as ERC721 tokenIds
+
+The protocol introduces an `effectiveDecimals()` function to return the number of decimals (6) actually used for the ERC20 portion of the token, while the standard `decimals()` function returns 18 for compatibility.
+
+### 3.3 SORRY Dog Levels System
+
+The SORRY token implements four distinct NFT levels based on token balance:
+
+| Level | Required Balance | Name             |
+|-------|------------------|------------------|
+| 0     | ≥ 1 SORRY        | "Dog"            |
+| 1     | ≥ 555 SORRY      | "Sad Dog"        |
+| 2     | ≥ 6,969 SORRY    | "Apology Dog"    |
+| 3     | ≥ 42,069 SORRY   | "Sorry Dog"      |
+
+As users accumulate SORRY tokens, as they cross the balance thresholds, they automatically are minted NFT representations of their levels:
+
+**Key features of the Levels system:**
+
+- **Dynamic NFT Minting/Burning**: When a user's balance crosses a threshold (either up or down), the corresponding NFT is automatically minted or burned.
+- **Unique TokenID Ranges**: Each level is assigned a specific range of tokenIDs, making it easy to identify an NFT's level.
+
+- **TokenID Recycling**: The protocol maintains a stack (LIFO) of burned tokenIDs, reusing them for new mints to save gas and keep the collection size bounded. We will keep a stack (LIFO) of burned token IDs. When a new token is minted, we will check the stack to see if there are any burned IDs available. If there are, we will use one of those. If there are no burned IDs, we will use the next available ID.
+
+- **Gas Optimization**: To prevent excessive gas costs, the system limits NFT operations to 10 at a time.
+
+### 3.4 TokenID System and Ranges
+
+Each NFT level has a dedicated TokenID range, making it easy to identify an NFT's level:
+
+| Level | Leading Digit | Magnitude | TokenId Range                          |
+|-------|---------------|-----------|----------------------------------------|
+| 0     | 4             | 10^11     | `: 400,000,000,000 -> 402,100,000,000` |
+| 1     | 3             | 10^9      | `:   3,000,000,000 ->   3,003,783,783` |
+| 2     | 2             | 10^7      | `:      20,000,000 ->      20,030,133` |
+| 3     | 1             | 10^5      | `:               1 ->         138,806` |
+
+
+For gas efficiency and collection management, the protocol maintains a stack (LIFO) of burned token IDs, reusing them for new mints before creating new IDs.
+
+The `tokenId` ranges where decided based on the theoretical maximum number of NFTs that could be minted at each level, assuming the tokenId is upto 12 digits.
+
+**Theoretical Max Supply:** 2,100,000,000 SORRY
+
+```
+Theoretical Max Level Tokens:
+1. Level 0: 2,100,000,000
+2. Level 1:     3,783,783
+3. Level 2:       301,334
+4. Level 3:        49,917
+```
+
+`tokenId` ranges are reserved for each level. Higher levels get lower tokenId ranges. You can easily identify the level by the magnitude of the leading most significant digit, any by that digit's value.
+
+#### Special Case: Level 3 "Sorry Dog" NFTs
+Level 3 uses a special pattern where the leading digit is always 1.
+
+Level 3 actually has a special range of [1, 199,999]. The leading digit is always a 1, so IDs will go:
+1,
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+100, 101, 102, 103, 104, 105, ..., 198, 199,
+1000, 1001, 1002, 1003, 1004, 1005, ..., 1998, 1999,
+10000, 10001, 10002, 10003, 10004, 10005, ..., 19998, 19999,
+100000, 100001, 100002, 100003, 100004, 100005, ..., 199998, 199999
+
+This gives use 1 + 10 + 100 + 1000 + 10000 + 100000 = 111,111 possible token IDs for level 3 (but we only need at most 49,917).
+
+### 3.5 Token Architecture
+
+SORRY implements a DN404-inspired multi-contract architecture:
+
+```
+SORRYDog (Proxy) → SORRYDogToken (Implementation)
+    ├── ShadowSorryERC20Proxy → ShadowSorryERC20TokenV1 (IERC7631Base)
+    ├── ShadowSorryERC721ProxyL0 → ShadowSorryERC721TokenL0 (IERC7631Mirror)
+    ├── ShadowSorryERC721ProxyL1 → ShadowSorryERC721TokenL1 (IERC7631Mirror)
+    ├── ShadowSorryERC721ProxyL2 → ShadowSorryERC721TokenL2 (IERC7631Mirror)
+    └── ShadowSorryERC721ProxyL3 → ShadowSorryERC721TokenL3 (IERC7631Mirror)
+```
+
+This structure:
+- Separates ERC20 functionality from the ERC721 collections
+- Maintains synchronized state through a central coordinator
+- Ensures full compliance with both token standards
+- Implements upgradeability via UUPS proxy pattern
+
+
+### 3.6 Cross-Chain Implementation
+
+The SORRY Protocol operates across both Ethereum and Base networks:
+
+- **Ethereum**: Houses the main ERC20 token contract and (eventually) Level 3 NFTs
+- **Base**: Hosts the full Levels Token implementation, level NFT minting and burning, and all additional protocol features
+- **Bridging**: Users can bridge SORRRY back to Ethereum, but they will lose their NFTs in the process. Eventually, we will support bridging Level 3 NFTs from Base to Ethereum (soon™). If NFTs are enabled on Ethereum, only burning will be supported. If a user's Ethereum balance falls below 42,069 SORRY, their Level 3 NFT is automatically burned and this information is passed back to Base through the L1 -> L2 bridge calling function.
+
+This design leverages Ethereum's liquidity and security while using Base's lower fees for complex operations.
+
+### 3.7 Dynamic NFT Traits
+
+Each NFT (especially at Levels 1-3) includes on-chain generated random traits:
+
+- **Randomization**: Uses a pseudorandom number generator, then upgrading to a commit-reveal scheme for fair trait generation, or VRF in the future.
+- **Trait Categories**: Includes rarity levels and visual characteristics
+- **On-chain Lore**: Higher-level NFTs include expanded backstories
+
+Future 3-transaction randomization process:
+1. Uses block hash as seed
+2. Reveals traits after 3 subsequent mint transactions
+3. Handles multiple mints in the same transaction with incremental seeds
+4. Can be upgraded to Chainlink VRF or similar in future versions
+
+### 3.8 The Significance of "69", "420", and "555"
+
+Throughout the protocol, the numbers "69", "420", and "555" have special significance:
+
+- In Chinese internet slang, "555" represents the sound of crying or sobbing
+- 69 & 420 are funny numbers. IYKYK. And dev has same sense of humor as Elon Musk
+- The first valuable NFT threshold begins at 555 SORRY tokens (when random minting rarity is implemented)
+- 555 is the number of SORRY required to create a "Sad Dog" NFT
+- 6969 is the number of SORRY required to create an "Apology Dog" NFT
+- 42069 is the number of SORRY required to create a "Sorry Dog" NFT
+- All token addresses and other core contract addresses are deployed to addresses that start and end with 0x555...555
+- Every 555th trove created receives a 555 SORRY rebate/boost
+
+This numerological theming encodes the cultural foundations of apology and vulnerability directly into the protocol's structure.
+
+
+---
+
+
+## 4. SORRY Protocol Features
+
+To complement the SORRY Dog Token, the SORRY Protocol introduces several additional features:
+1. **TroveNFTs:** On-chain Apologies & Messages -> Answer Secret Questions to Unlock SORRY in Apology Troves
+2. **Logger:** Tracking Apologies -> Apology Leaderboards
+3. **VendingMachine:** Buy SORRY with ETH or USDC -> Generate Protocol Owned Liquidity for SORRY
+4. **Governance:** On-Chain Voting & Automatic Proposal Execution -> Community advising the SORRY Protocol liquidity and supply
+5. **SimpOrNoSimp:** Voting Game Directing Dev's Love Life -> Community supports dev being a simp and "Go for the girl!" or dev needs to grow a pair and move on and "Stop being a low-value beta-tier simp-cuck-loser!"
+
+
+### 4.1 SORRY Troves
+
+Troves enable the apology economy. They enable the community to create meaningful apologies and messages, and to support each other's apologies.
+It's a social movement of people saying sorry publicly for all sorts of any kind of miss grievances or accidental wrong doings, from being mean to a waiter, to bullying someone back in high school, to having an affair, to accidentally farting in an elevator.
+
+Troves are specialized NFTs that function as token vaults with conditional access, designed to make meaningful apologies possible:
+
+1. **Secret-Based Locking**
+   - Creators can secure troves with 1-5 questions
+   - Only someone who knows the answers can claim contents
+   - Perfect for reconnecting with someone who shares specific memories
+
+2. **ERC6551 Enabled "Token Bound Account"**
+   - Each trove gets a token-bound account based on the ERC6551 standard. This means that the NFT owns the account, and whoever holds that NFT can control the contents of that account, and claim the contents of the trove.
+   - As an hold SORRY and other tokens
+   - Enables multi-asset apology gifts
+
+3. **Multi-Contributor Support**
+   - Multiple users can add SORRY to existing troves, to show their support for someone else's apology.
+   - Community can rally around meaningful apologies
+   - Track contributors through the Apology Logger with global and regional leaderboards.
+
+4. **Special Feature: Chloe's Trove**
+   - Dedicated trove holding 1,000,000 SORRY for Chloe
+   - This trove could potentially increase in value upto 111,000,000 SORRY, based on the community's Simp/NoSimp voting mechanism
+   - Becomes part of the protocol's ongoing narrative
+
+5. **Creation Mechanics**
+   - Costs 100 SORRY (flat fee) to create a new trove. 1 SORRY saved (for 555th trove bonus) and the rest are burned.
+   - Every 555th trove created receives a 555 SORRY bonus (added to the trove's locked amount)
+   - NFT is held in the trove contract until claimed by answering the secret questions.
+
+Sorry Troves are another NFT collection and feature to complement the SORRY Dog Token and make it possible to give Chloe her 1,000,000 SORRY. Even if she never want to talk to Clyde again, he can still give her the SORRY.
+
+Sorry Troves allow users to create a shared secret: a set of questions that a user can answer on-chain to unlock the riches contained in the Trove. 
+
+When each trove is created, the NFT is minted but held in the trove central contract. The NFT gets released to the person who answered the secret question(s) correctly. When a trove is created, an ERC6551 token bound account is created. This is where the SORRY is sent. This means troves can also store other tokens too, after creation, to increase the value of the trove. There is a flat free, starting at 10 SORRY to create a trove.
+
+Answering the questions is a 2-step process, to prevent front-running. This is similar to the the flow required when registering a .eth ENS name.
+1. To redeem, the user must commit the hashed salted answers.
+2. After that, the user can reveal the pain-text answers and claim the trove.
+
+> TODO: Add technical details & contract addresses
+
+### 4.2 Apology Logger and Leaderboards
+
+The SorryLogger serves as the central event tracking system for all protocol activity:
+
+1. **Event Tracking**
+   - Records all SORRY transfers (apologies given/received)
+   - Tracks level upgrades/downgrades
+   - Logs trove creations and contributions
+   - Every SORRY transfer can log an “apology” event via the **Logger** contract.  
+   - “Who apologized the most” (i.e., who sent SORRY) vs. “Who’s most wronged” (who received SORRY).  
+   - Frequency and volume can be tracked.
+
+2. **Leaderboard Generation**
+   - **Top Apologizers**: Users who have sent the most SORRY
+   - **Most Wronged**: Users who have received the most SORRY
+   - **Simp Targets**: Most supported trove recipients
+
+3. **Geographic Features**
+   - Users can register their country/region and/or their motherland in the Logger contract.
+   - Enables geographic leaderboards 
+   - Creates friendly competition between regions
+   - Transfers log those countries, enabling geo-based leaderboards (e.g., “Top apologies in Canada” or “Top receivers in Japan”).
+
+4. **Messaging Integration**
+   - Logs public messages attached to transfers
+   - Stores references to encrypted messages
+   - Enables on-chain apology tracking
+
+> TODO: Add technical details & contract addresses
+
+### 4.3 Vending Machines
+
+The SORRY Dog Liquidity Vending Machine is a mechanism to distribute SORRY to the community. It is a simple mechanism to allow the community to purchase SORRY at a fixed price.
+
+The Vending Machine contracts serve as price stabilizers and liquidity builders:
+
+- **Tiered Pricing**: Token batches are sold at predetermined prices with automatic increases
+- **Liquidity Addition**: Automatically pairs purchased SORRY with USDC or ETH to create liquidity
+- **LP Locking**: All generated LP tokens are time-locked for protocol stability
+- **Fee Option**: Configurable fee (0-20%) for project development
+
+1. **USDC Vending Machine**  
+   - Users buy SORRY with USDC at tiered prices (batches).  
+   - Mints new SORRY, pairs it with the USDC to create liquidity on **Uniswap V3 (1.0% fee)**.  
+   - Optionally sends a dev/treasury fee (0–20%) if configured.  
+   - LP tokens (which might be NFTs in Uniswap V3) are locked in a `Timelock` contract.
+
+2. **ETH Vending Machine**  
+   - Similar logic, but uses ETH to buy SORRY.  
+   - Adds liquidity on **Aerodrome** (or a Uniswap fork), locks LP tokens in the same or a different timelock.  
+   - Also supports dev/treasury fee.  
+
+3. **Settings & Logger**  
+   - A shared **`Settings.sol`** contract stores the treasury address, dev fee %, tiers for pricing, etc.  
+   - A centralized **`Logger.sol`** can unify event emissions for purchases, minted SORRY, liquidity additions, etc.
+
+Vending Machines will be upgraded to incorporate a decay mechanism. As time passes, the amount of SORRY available for purchase will decrease. This decrease will be burned. The intention of the vending machines are to create price ceilings at different levels to prevent large price pumps early in the project. As time passes, these price ceilings will be less beneficial to the community, so the suppression power of the vending machines will decrease.
+
+> TODO: Add technical details & contract addresses
+
+### 4.4 Governance
+
+SORRY Protocol is not a DAO. Although if we were, we would be called SimpDAO. It is an art project, an attempt to create a social movement, and a to write a love letter through code on an immutable blockchain. 
+
+SORRY Token as a Meme Collectable is 100% meant for the community to enjoy. Dev want to set up lots of opportunities for community to dictate how to best use this novel token to have fun, grow awareness, and help people right those they have wronged.
+
+Using Compound Governor Bravo contracts, the community can vote on proposals that will automatically execute uppon passing. Proposal creation is restricted to the dev, for the time being.
+
+Beyond the Simp/NoSimp mechanism, governance may also:
+
+1. **Protocol Parameters**
+   - Adjust dev fees and vending machine tiers
+   - Update protocol settings
+   - Modify messaging fees
+
+2. **Contract Management**
+   - Approve upgrades to contract implementations
+   - Deploy new protocol features
+   - Authorize integrations with other protocols
+
+3. **Supply Controls**
+   - Modify the total supply (upto the maximum cap of 2.1B)
+   - Create or modify burn mechanisms
+   - Adjust reward structures
+   - Adjust token taxes
+
+4. **Season Management**
+   - Approve new SORRY Seasons
+   - Set season themes and reward structures
+   - Fund special community initiatives
+
+
+> TODO: Add technical details & contract addresses
+
+### 4.5 Simp/NoSimp Voting Game
+
+Built on top of the Governor Bravo contracts, the Simp/NoSimp voting game allows the community to vote on a weekly proposals of whether the dev should continue to hold out hope for his girl (Simp), or if he should give up and move on (NoSimp). 110 weekly proposals will be created, to allow the govenor contract to automatically run this weekly voting. Each proposal will control 1,000,000 SORRY that either gets added to Chloe's Trove, or is burned.
+
+Each week for 110 weeks,the community can vote on what happens to 1,000,000 SORRY:
+- **Simp**: Encourage dev to keep simping for Chloe. Add more SORRY to Chloe's Trove. Hopefully this increating treasure will catch her attention and help Clyde efforts to win her back.
+- **NoSimp**: Tell Clyde to stop being a pathetic simp. Give dev a kick in the nuts. Send dev 42069 SORRY to make him feel better, then permanently burn the remaining 957,931 SORRY, never to enter circulation.
+
+Simp/NoSimp will be setup using onchain governance with Compound Governor Bravo contracts. 110 proposals will be setup to automatically run weekly, each controlling 1,000,000 SORRY.
+
+
+#### 4.5.1 The Narrative Mechanism
+
+At the heart of SORRY's governance is the weekly Simp/NoSimp vote:
+
+1. **Simp Votes**
+   - Add more SORRY to Chloe's Trove
+   - Support Clyde's quest to win back his love
+   - Increase token supply and create inflationary pressure
+   - Represent hope, persistence, and romantic idealism
+
+2. **NoSimp Votes**
+   - Burn SORRY from Chloe's Trove
+   - Encourage Clyde to move on and find closure
+   - Decrease token supply and create deflationary pressure
+   - Represent pragmatism, self-respect, and emotional health
+
+This mechanism creates a community-driven narrative tension that:
+- Engages users in an ongoing love story
+- Ties tokenomics to emotional storytelling
+- Creates regular governance engagement
+- Builds community around opposing philosophies
+
+#### 4.5.2 Voting Structure
+
+1. **Voting Power**
+   - Based on SORRY token holdings
+   - Higher level NFT holders may receive voting bonuses
+   - Level 3 holders likely get the largest voting multiplier
+
+2. **Schedule and Treasury**
+   - 110,000,000 SORRY dedicated to voting outcomes
+   - Weekly votes over 110 weeks, approximately 2.1 years
+   - Begins one month after protocol launch
+
+3. **Implementation**
+   - Votes tallied each Friday at 00:00 UTC
+   - Results executed automatically via smart contract (soon™)
+   - Public record of all voting history
+
+4. **Narrative Progression**
+   - The balance of Chloe's Trove becomes a key protocol metric
+   - Community develops "Simp" and "NoSimp" factions
+   - The story evolves based on collective decisions
+   - Creates a crypto-native soap opera with real economic impact
+
+> TODO: Add technical details & contract addresses
+
+### 4.6 Additional Features
+
+#### 4.6.1 Ethereum Supply Unlocking
+The SORRY contract controlling the master supply, on Ethereum, vests ~61% of the total supply over 3 years. Vesting claims are automatically bridged to Base.
+
+#### 4.6.2 Trove Messaging Features (WIP)
+
+The protocol supports several messaging capabilities:
+
+1. **Public Messages**
+   - Stored directly on-chain for transparency
+   - Attached to transfers or trove creations
+   - Visible to everyone (the ultimate public apology)
+
+2. **Encrypted Messages**
+   - Uses ERC7627 for private communication
+   - Only the intended recipient can decrypt
+   - Perfect for personal apologies or reconnections
+
+3. **Deposit Requirements**
+   - Optional minimum SORRY deposits to leave messages on troves
+   - Prevents spam and ensures sincerity
+   - Flat fee of 100 SORRY burned for each message (deflationary mechanism)
+
+4. **Integration Points**
+   - TroveNFT stores primary message content
+   - Logger records message events
+   - Apology Leaderboard can highlight notable public apologies
+
+
+
+
+---
+
+## 5. Tokenomics & Liquidity
+
+The intent of SORRY is to be a meme token and collectable. It is a love story. It is art through defi. It is code written by a hopeless Romantic Idealist (or a pathetic Simp). It is a sad attempt by dev to say sorry for his mistakes.
+
+It is a meme with utility, with the hopes of going viral, achieving widespread notariety, harnessing the power of simps, assholes, and romantic idealists, and ultimately gaining the attention of dev's long lost love, Chloe, and creating social pressure so she takes him back. OR community teaching dev to stop being a simp.
+
+SORRY is not a get-rich-quick scheme. Tokenomics have been designed to LIMIT the upside potential early in the project life. We want to prevent massive pumps that lead to early project death. The liquidity venting machines are designed to create price ceiling levels to prevent large price pumps early in the project, while decaying over time, allowing the price to raise more easily as time passes.
+
+The goal is to be as fair as possible to all participants. We want as many people joining in the apology movement as possible. We want to attract as many users as possible, make creating Troves and on-chain apologies and love letters cheap and affordable. And once there is lots of SORRY locked up in Troves and community on-chain apology notes, then the price can rise, creating excitement and interest in people unlocking the troves and reading the love letters.
+
+### 5.1 Supply Overview
+
+**Initial Parameters:**
+- Total Supply: 1,111,000,000 SORRY
+- Theoretical Maximum Supply: 2,100,000,000 SORRY (subject to governance)
+- Initial Mint: 420,690,000 SORRY
+- Initial Circulating Supply: 87,490,000 SORRY (8.75% of Total)
+
+From the Total Supply:
+10.0% is for Chloe's Trove *or* Burned through Simp/NoSimp Voting - over ~2 years
+~1.0% is for Ethereum Gods Tribute - sent to Vitalik - following in the tradition set by the SHIB Army
+25.0% is for Liquidity Pools and PoL Vending Machines
+~2.9% is for early adopters and community retroactive rewards
+61.1% is for the community. Unlocked over 3 years and used to promote the SORRY Story. Primarily focused, at the start, on Aerodrome bribes and community giveaways.
+0.00% is for dev - dev only wants sorry to be a popular meme. 100% should be given to the community.
+
+> TODO: Pie chart and supply unlock schedule
+
+### 5.2 Initial Distribution
+
+The initial 420,690,000 SORRY tokens minted are allocated as follows:
+
+1. **Chloe's Trove**: 1,000,000 SORRY
+2. **Simp/NoSimp Treasury**: 110,000,000 SORRY
+   - Released/burned through Simp/NoSimp Voting, weekly over 110 weeks (~2.1 years) starting after 1 month
+3. **Liquidity Reserves**: 277,750,000 SORRY
+   - **Initial Liquidity**: 55,550,000 SORRY
+     - SORRY/USDC on Uniswap V3: 16,665,000 SORRY
+     - SORRY/ETH on Aerodrome: 38,885,000 SORRY
+   - **Vending Machine Reserve**: 222,200,000 SORRY
+4. **Ethereum Community Tribute**: 10,000,000 SORRY
+   - Sent to Vitalik's wallet as a ritualistic tribute
+5. **Community & Support Fund**: 31,940,000 SORRY
+   - For airdrops to SHIB Army and early community members
+   - To boost initial user-created troves
+
+Since 111,000,000 SORRY is locked into Chloe's Trove and the Simp or NoSimp voting, and 222,200,000 is locked in the vending machines, effective initial circulating supply is:
+
+$420,690,000 - 111,000,000 - 222,200,000 = 87,490,000 \ SORRY$ 
+
+> **Initial Circulating Supply:** 87,490,000 SORRY (8.75% of Total Supply)
+
+
+#### 5.2.1 Seed Liquidity
+
+Aerodrome will be the primary DEX for SORRY and Uniswap the secondary.
+
+The initial liquidity is created by the dev team and sent to the Uniswap V3 and Aerodrome liquidity pools on Base.
+
+> **Initial Liquidity Pools:** 555,500,000 SORRY (5% of Total Supply)
+
+- (1.5%) 16,665,000 SORRY for Uniswap V3 USDC/SORRY
+- (3.5%) 38,885,000 SORRY for Aerodrome ETH/SORRY
+
+**Initial Liquidity:** ~1 ETH ~= $1,800
+
+**Initial Price:** Between $0.000003 - $0.0000035 per SORRY
+
+For 5% of the total supply, we have $1,800 of liquidity. => $36,000 FDV
+
+This implies an initial Market Cap of 8.75% of FDV ($36,000) => $3,150 MC
+
+
+### 5.3 Vending Machine System
+
+20% of SORRY total supply (222,200,000 SORRY) is reserved for distribution through the SORRY Dog Liquidity Vending Machine. This will grow Protocol Owned Liquidity (POL) and provide a mechanism to distribute SORRY to the community. These will allow users to purchase tranches of SORRY at set prices. These tranches will create liquidity ceilings that are meant to prevent large token price pumps early in the project.
+
+### 5.4 Long-Term Vesting
+
+The remaining 690,310,000 SORRY (~61% of total supply) follows a 3-year vesting schedule:
+
+- Vesting begins 1 month after Ethereum launch
+- Claims are directed to Base bridge contract and treasury multisig
+- 100% allocated to marketing, community rewards, and protocol development
+- The current plan is to use the SORRY to grow liquidity. This is likely to be done with Aerodrome bribes, and through refuelling the PoL vending machines to grow and deepen the liquidity pools.
+
+---
+
+## 6. Development Roadmap
+
+The SORRY Protocol will be developed in three romantic-themed epochs:
+
+### Epoch 1: Before Sunrise
+[ ] Initial token contracts on Ethereum and Base
+[ ] Basic Level Token functionality
+[ ] TroveNFTV1 deployment
+[ ] Chloe's Trove deployment
+[ ] Seed liquidity on Uniswap and Aerodrome
+[ ] Vending Machine contracts
+[ ] Core protocol documentation
+
+### Epoch 2: Before Sunset
+[ ] Full Trove system implementation
+[ ] Apology Logger and initial leaderboards
+[ ] Centralized Settings contract
+[ ] Governance contract deployment
+[ ] Fully onchain Simp/NoSimp Voting
+[ ] Automated Simp/NoSimp Proposal Execution
+[ ] Aerodrome bribe campaign
+[ ] Community giveaways (onchain quizes/trivia/treasure hunts powered by TroveNFTs)
+
+### Epoch 3: Before Midnight
+[ ] SORRY Season competitive framework
+[ ] Enhanced messaging capabilities
+[ ] Global regional leaderboards
+[ ] Advanced trove functionality with ERC6551 integration
+[ ] Cross-chain bridging NFTs from Base to Ethereum
+[ ] Governance control over treasury expansion of SORRY supply
+
+*Note: This is a passion art project. No audits.*
+
+---
+
+
+## 7. Background & Related Work
+
+### 7.1 The Evolution of Hybrid Token Standards
+
+The SORRY Protocol builds upon several innovations in token standards:
+
+1. **Early Approaches**
+   - **ERC-1155**: Multi-token contracts for both fungible and non-fungible assets
+   - **ERC-3525**: Semi-fungible tokens with divisible balances within NFTs
+
+2. **Single-Contract Hybrids**
+   - **ERC-404** (Pandora): Experimental standard merging ERC-20 and ERC-721
+   - Faced compatibility challenges with existing infrastructure
+   - High gas costs due to complex on-chain logic
+
+3. **Dual-Contract Solutions**
+   - **DN404** (Divisible NFT): Paired ERC-20 and ERC-721 contracts
+   - **ERC-7631**: Formalized Dual Nature Token Pair concept
+   - Better compatibility with existing applications
+
+
+### 7.2 SORRY's Innovations
+
+The SORRY Protocol extends these foundations with several key innovations:
+
+1. **Multi-Level Extension**
+   - Expands beyond the one-token-one-NFT model
+   - Creates tiered NFT levels based on balance thresholds
+   - Adds gamification and status mechanics
+
+2. **Advanced Token Architecture**
+   - Uses multiple mirror contracts for different NFT levels
+   - Implements full upgradeability
+   - Separates storage and logic concerns
+
+3. **Social and Narrative Integration**
+   - Embeds a story directly into tokenomics
+   - Creates community-driven narrative progression
+   - Ties governance to emotional storytelling
+
+4. **Cross-Chain Approach**
+   - Leverages multiple blockchain networks
+   - Optimizes for both security and cost efficiency
+   - Creates unified experience across chains
+
+
+By learning from these prior efforts, SORRY creates a more robust, compatible, and feature-rich token system while maintaining the core vision of bridging fungible and non-fungible token concepts.
+
+
+
+### 7.3 Important EIPs, ERCs, and Reference Works
+
+#### "ERC-404" and "DN404"
+([GitHub - Pandora-Labs-Org/erc404](https://github.com/Pandora-Labs-Org/erc404))
+
+([GitHub - Vectorized/dn404: Implementation of a co-joined ERC20 and ERC721 pair.](https://github.com/Vectorized/dn404))
+
+#### ERC20
+([ERC-20: ERC-20 Token Standard](https://eips.ethereum.org/EIPS/eip-20))
+
+#### ERC721
+([ERC-721: ERC721 Token Standard](https://eips.ethereum.org/EIPS/eip-721))
+A standard interface for non-fungible tokens, also known as deeds.
+
+#### ERC165
+([ERC-165: Standard Interface Detection](https://eips.ethereum.org/EIPS/eip-165))
+Creates a standard method to publish and detect what interfaces a smart contract implements.
+
+#### ERC2612
+([ERC-2612: Permit Extension for EIP-20 Signed Approvals (Permit2)](https://eips.ethereum.org/EIPS/eip-2612))
+A standard interface for a token that allows for a more efficient approval process.
+EIP-20 approvals via EIP-712 secp256k1 signatures
+
+#### ERC2981
+([ERC-2981: NFT Royalty Standard](https://eips.ethereum.org/EIPS/eip-2981))
+A standardized way to retrieve royalty payment information for non-fungible tokens (NFTs) to enable universal support for royalty payments across all NFT marketplaces and ecosystem participants.
+
+#### ERC4626
+([ERC-4626: Tokenized Vaults](https://eips.ethereum.org/EIPS/eip-4626))
+standard API for tokenized Vaults representing shares of a single underlying EIP-20 token. The EIP-20 operations balanceOf, transfer, totalSupply, etc. operate on the Vault “shares” which represent a claim to ownership on a fraction of the Vault’s underlying holdings.
+
+#### ERC5114
+([ERC-5114: Soulbound Badge](https://eips.ethereum.org/EIPS/eip-5114))
+A token that is attached to a "soul" at mint time and cannot be transferred after that.
+
+#### ERC6551
+([ERC-6551: Non-fungible Token Bound Accounts](https://eips.ethereum.org/EIPS/eip-6551))
+An interface and registry for smart contract accounts owned by non-fungible tokens. a system which assigns Ethereum accounts to all non-fungible tokens. These token bound accounts allow NFTs to own assets and interact with applications, without requiring changes to existing smart contracts or infrastructure.
+
+#### ERC7496
+([ERC-7496: NFT Dynamic Traits](https://eips.ethereum.org/EIPS/eip-7496))
+Interface that extends ERC-721 that defines methods for setting and getting dynamic onchain traits associated with non-fungible tokens. These dynamic traits can be used to represent properties, characteristics, redeemable entitlements, or other attributes that can change over time. By defining these traits onchain, they can be used and modified by other onchain contracts.
+
+#### ERC7498
+([ERC-7498: NFT Redeemables](https://eips.ethereum.org/EIPS/eip-7498))
+This specification introduces a new interface that extends ERC-721 and ERC-1155 to enable the discovery and use of onchain and offchain redeemables for NFTs. Onchain getters and events facilitate discovery of redeemable campaigns and their requirements. New onchain mints use an interface that gives context to the minting contract of what was redeemed. For redeeming physical products and goods (offchain redeemables) a redemptionHash and signer can tie onchain redemptions with offchain order identifiers that contain chosen product and shipping information.
+
+
+#### ERC7631
+([ERC-7631: Dual Nature Token Pair](https://eips.ethereum.org/EIPS/eip-7631))
+A fungible ERC-20 token contract and non-fungible ERC-721 token contract can be interlinked, allowing actions performed on one contract to be reflected on the other. This proposal defines how the relationship between the two token contracts can be queried. It also enables accounts to configure whether ERC-721 mints and transfers should be skipped during ERC-20 to ERC-721 synchronization.
+
+
+#### ERC7627
+([ERC-7627: Secure Messaging Protocol](https://eips.ethereum.org/EIPS/eip-7627))
+This proposal implements the capability to securely exchange encrypted messages on-chain. Users can register their public keys and encryption algorithms by registration and subsequently send encrypted messages to other users using their addresses. The interface also includes enumerations for public key algorithms and a structure for user information to support various encryption algorithms and user information management.
+
+
+#### ERC2848
+([ERC-2848: My Own Messages (MOM)](https://eips.ethereum.org/EIPS/eip-2848))
+My Own Messages (MOM) is a standard to create your very own public, always updated, unstoppable, verifiable, message board.
+
+
+## 8. Conclusion
+
+### 8.1 SORRY's "Levels Token Standard" Potential and Future Work
+
+The SORRY Protocol's "Levels Token Standard" has the potential to:
+
+1. Create automatic reward card tiers that upgrade as users collect points.
+2. Games: Leveling up or evolving characters or items in a game as they earn XP (think of a Pokemon automatically evolving)
+
+
+---
+
+*"Is it a story about a guy who fucked up and just wants to say he is sorry. The rest is for you to decide..."*

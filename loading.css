@@ -1,0 +1,128 @@
+:root {
+  --red: #c79f9f;
+  --red2: #c8a1a1;
+  --green: #adc7c1;
+  --blue: #9bacc5;
+  --light-blue: #d0d6de;
+  --black: #3f3f3f;
+  --white: #eeeeee;
+  --txt-light: 100 !important;
+  --txt-regular: 400 !important;
+  --txt-bold: 700 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.loading-bar {
+  width: 100%;
+  max-width: 369px;
+  height: 30px;
+  background: #d0d6de;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  animation: fadeIn 4s 4.5s forwards;
+  opacity: 0;
+  /* delay of 8s to start after icon_logo */
+}
+
+.loading-bar-inner {
+  width: 69%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    #9bacc5 25%,
+    transparent 25%,
+    transparent 50%,
+    #9bacc5 50%,
+    #9bacc5 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 56.57px 56.57px;
+  /* sqrt(2) * 40px */
+  animation: swirl 2s linear infinite;
+}
+
+@keyframes swirl {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 56.57px 56.57px;
+  }
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.42069;
+  }
+}
+
+.loading-text {
+  color: #c8a1a1;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  opacity: 0;
+  animation: flashText 1.5s infinite alternate;
+  animation-delay: 6s;
+}
+
+@keyframes flashText {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 0.9;
+  }
+}
+
+span.dot {
+  opacity: 0;
+  animation: flashDot 3s infinite;
+}
+
+span.dot:nth-child(2) {
+  animation-delay: 1s;
+}
+
+span.dot:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes flashDot {
+  0%,
+  96% {
+    opacity: 0.01;
+  }
+
+  12.5%,
+  96.1% {
+    opacity: 1;
+  }
+
+  96.2%,
+  99% {
+    opacity: 0.01;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
