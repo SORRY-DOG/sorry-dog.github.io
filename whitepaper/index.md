@@ -72,18 +72,17 @@ disclaimer: This whitepaper is for informational purposes only. Non of the featu
 # **SORRY Dog:** Meme Apology Token - Whitepaper
 ## *A Hybrid ERC20-ERC721 "Levels Token Standard" for Digital Apologies & Community-Driven Meme Utility*
 
+|**Author**|[Clyde C. "Sadfaced Dev"](https://sadfaced.eth.limo)|
+|-:|--|
+|**Reviewers**| 1. [M. R. Shimamoto (Shima)](https://twitter.com/mrshimamoto) <br> 2. [...](https://twitter.com/#)|
+
+<br/>
+
 | Version | Date | Description |
 |---------|------|-------------|
 | `0.1.0-250401` | 2025-04-01 | Initial draft |
 | `0.1.1-250410` | 2025-04-10 | Update lore and technical design |
 | `0.1.2-250414` | 2025-04-14 | References & links |
-
-<br/>
-
-|**Author**|[Clyde C. "Sadfaced Dev"](https://sadfaced.eth.limo)|
-|-:|--|
-|**Reviewers**| 1. [M. R. Shimamoto (Shima)](https://twitter.com/mrshimamoto) <br> 2. [...](https://twitter.com/#)|
-
 
 ---
 
