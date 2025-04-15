@@ -1,13 +1,109 @@
-# SORRY Dog Protocol White Paper
-## A Hybrid ERC20-ERC721 "Levels Token" for Digital Apologies & Community-Driven Meme Utility
+---
+title: "SORRY Dog: Meme Apology Token - Whitepaper"
+subtitle: "\"Levels Token Standard\" - A Hybrid ERC20-ERC721 Token Standard for Digital Apologies & Community-Driven Meme Utility"
+keywords:
+- SORRY
+- SORRY Dog
+- SORRY Token
+- Meme
+- Meme Token
+- Dog Token
+- Memecoin
+- Levels Token Standard
+- ERC20-ERC721 Token Standard
+- Community-Driven Meme Utility
+- Apology
+- Digital Apologies
+- Apology Economy
+- Apology Leaderboards
+- Apology Troves
+- Apology Gifts
+- Apology Messages
+- Apology Leaderboards
+- On-Chain Apologies
+- NFTs
+- ERC721
+- ERC20
+- ERC7631
+- ERC404
+- DN404
+- sadfaced
+- Chloe & Clyde
+- "420"
+- "69"
+- "555"
+- "1000x"
+- Simp
+- NoSimp
+- Simp or NoSimp
+- Simp-maxing-1000x
+- Fungible
+- Non-fungible
+- Collectible
+- Utility
+- Protocol
+- Social Movement
+- Story
+version: 0.1-250401
+date: 2025-04-01
+website: https://sorry.dog
+github: https://github.com/sorry-dog
+ens: sorrydog.eth
+twitter: https://twitter.com/sorrydog_meme
+author:
+- name: Clyde "Sadfaced Dev"
+  affiliation: The SORRY Labs Collective
+  ens: sadfaced.eth
+  email: dev@sorry.dog
+reviewers:
+- name: The SORRY Labs Collective
+  affiliation: The SORRY Labs Collective
+  email: sorry@sorry.dog
+  github: https://github.com/sorrylabs
+  twitter: https://twitter.com/sorrydog_meme
+- name: M. R. Shimamoto (Shima)
+  email: shima@sorry.dog
+  github: https://github.com/mrshimamoto
+  twitter: https://twitter.com/mrshimamoto
+copyright: 2025 The SORRY Labs Collective
 
+---
+
+# **SORRY Dog:** Meme Apology Token - Whitepaper
+## *A Hybrid ERC20-ERC721 "Levels Token Standard" for Digital Apologies & Community-Driven Meme Utility*
+
+
+|**Author**|[Clyde C. "Sadfaced Dev"](https://sadfaced.eth.limo)|
+|-:|--|
+|**Reviewers**| 1. [M. R. Shimamoto (Shima)](https://twitter.com/mrshimamoto) <br> 2. [Luna](https://twitter.com/lunamoon_eth)|
+
+<br/>
+
+| Version | Date | Description |
+|---------|------|-------------|
+| `0.1.0-250401` | 2025-04-01 | Initial draft |
+| `0.1.1-250414` | 2025-04-14 | Update lore and technical design |
+
+<br/>
+
+||Official Links|
+|-:|--|
+|||
+|**Website**|[https://sorry.dog](https://sorry.dog)|
+|**GitHub**|[https://github.com/sorry-dog](https://github.com/sorry-dog)|
+|**ENS**|[sorrydog.eth](https://sorrydog.eth.limo)<br>[sorry.base.eth](https://sorry.base.eth.limo)<br>[区块链舔狗.eth](https://区块链舔狗.eth.limo)|
+|**TON Space**|[sorrydog.ton](https://sorrydog.ton.run)|
+|**Twitter**|[https://twitter.com/sorrydog_meme](https://twitter.com/sorrydog_meme)|
+|**Telegram**|[https://t.me/sorrydog_meme](https://t.me/sorrydog_meme)|
+
+---
 ---
 
 ## Abstract
 
 At its core, the SORRY Protocol is both a technological innovation and a love story - a testament to a developer's regret and his quest for redemption, encoded in blockchain. 
 
-SORRY Dog is an innovative token protocol that combines ERC20 and ERC721 functionality into a single token ecosystem, creating what we call the "Levels Token Standard." This hybrid approach enables both fungible transactions and non-fungible collectible ownership based on token balance thresholds.
+This paper introduces the SORRY token, and the "Levels Token Standard". This novel hybrid token standard combines the fungibility of ERC20 tokens with the uniqueness of ERC721 non-fungible tokens (NFTs). We present a multi-level NFT system tied to token balances, where users automatically receive NFTs of increasing rarity as their token holdings reach predefined thresholds. The paper details the mathematical framework, architectural design, and economic mechanisms of the SORRY protocol, including cross-chain compatibility, token-based social mechanisms, and a unique apology-themed ecosystem. We demonstrate that our dual-contract approach maintains full ERC20 and ERC721 compliance while offering enhanced functionality compared to existing hybrid token implementations like ERC404, DN404, and ERC7631.
 
 The protocol launches on both Ethereum and Base networks, featuring cross-chain compatibility. Token supply is controlled by the token contract on Ethereum, but protocol features and Level Token utility primarily exist on Base Chain. Once bridged to Base, the fully featured SORRY token is unlocked.
 
@@ -17,17 +113,24 @@ Through code and lore, dev Clyde hopes that SORRY Dog Token Protocol will captur
 
 ---
 
-## Table of Contents
+<!-- ## Table of Contents
 1. [Introduction](#1-introduction)
 2. [The SORRY Lore](#2-the-sorry-lore)
 3. [Core Technical Design](#3-core-technical-design)
 4. [Protocol Features](#4-protocol-features)
+- 4.1. [SORRY Troves](#41-sorry-troves)
+- 4.2. [Apology Logger & Leaderboards](#42-apology-logger--leaderboards)
+- 4.3. [Liquidity Vending Machines](#43-liquidity-vending-machines)
+- 4.4. [SORRY Governance](#44-sorry-governance)
+- 4.5. [Simp/NoSimp Voting Game](#45-simpnosimp-voting-game)
+- 4.6. [Additional Features](#46-additional-features)
 5. [Tokenomics & Liquidity](#5-tokenomics--liquidity)
-6. [Governance: Simp or No Simp](#6-governance-simp-or-no-simp)
-7. [Development Roadmap](#7-development-roadmap)
-8. [Background & Related Work](#8-background--related-work)
-
----
+6. [Development Roadmap](#6-development-roadmap)
+7. [Background & Related Work](#7-background--related-work)
+8. [Future Applications & Next Steps](#8-future-applications--next-steps)
+9. [Conclusion](#9-conclusion)
+10. [Appendix](#10-appendix)
+--- -->
 
 ## 1. Introduction
 
@@ -39,41 +142,108 @@ At its core, the SORRY Protocol is both a technological innovation and a love st
 
 ## 2. The SORRY Lore
 
-> *"This is the techno-modern version of the JukeBox from Say Anything. This is a shy dev's equivalent of making a fool of himself in front of a crowd to get the girl. This is Simp-maxing-1000x."* - Dev Clyde
+In the ever-evolving world of crypto, some projects are born of innovation, others of speculation, but SORRY was born of love, regret, and a promise.
 
+In the words of the developer, Clyde:
 
-### The Heartbreak Behind the Meme
-
-In the ever-evolving world of crypto, some projects are born of innovation, others of speculation, but SORRY was born of love and regret.
-
-
-Back in 2020, when SHIB was just beginning its meteoric rise, a young woman named Chloe suggested to her bestfriend and twin flame, Clyde — a blockchain enthusiast and developer — that they should create a meme token called "SORRY." She thought it would be funny and meaningful ticker for a meme token at the same time. Clyde thought it was a hilarious idea. Always the cunning business woman, Chloe said: "If you ever make that token, you have to promise me you will give me 1,000,000 SORRY." Clyde agreed.
-
-From friends to lovers to estranged aquaintances. Chloe and Clyde's relationship went from a beautiful
-
-For four years, their relationship existed in a perpetual "will-they-won't-they" state. Chloe remained loyal, watching from the sidelines as Clyde continued to reject his one chance at true love for the fleeting attention of trashy women and 304's.
-
-> Type 304 into a calculator and read upside down [PIC]
-
-Finally, in a moment of [who knows what she was thinking], Chloe made one last attempt to win Clyde's heart. She pitched him on their shared future once more, painting a picture of their wedding, their family, and their future growing old together. Surprisingly, this time, Clyde agreed - but the timing had shifted.
-
-Fate has a cruel sense of humor. Whether as karma for years of neglect or because she had truly moved on, Chloe rejected him, turning the tables on the man who had kept her waiting for so long. Dev Clyde is broken hearted.
-
-Devastated by this reversal, Clyde turned to what he knew best - coding. What began as personal therapy and an artistic tribute to Chloe evolved into the SORRY Protocol: a digital monument to his mistake and a desperate hope that if the project gained enough popularity, Chloe might see it and understand it was created for her.
-
-Today, Clyde is making good on his promise. The SORRY token launches with 1,000,000 SORRY tokens waiting in a special trove for Chloe. The trove is protected by 5 secret questions -- shared secrets from the lovers' pasts.
-
-Dev is broken hearted. He need the community help.
-
-> *"When I come up with the idea of launching SORRY, one year ago, all I want is win her back. I spend the last year wondering... am I making the biggest mistake of my life? Am I just a pathetic simp? Am I just a sadfaced dog? I don't know. I do know what to do. So I am leaving that up to the community. Do I continue to SIMP or NO SIMP? I do not know what to do. I need you to help me."*
+> *"This is the techno-modern version of the JukeBox from Say Anything. This is a shy dev's equivalent of making a fool of himself in front of a crowd to get the girl. This is '**Simp-maxing-1000x**'."*
 >
-> — Dev Clyde — 0x5adfaced — sadfaced.eth
+> — ***Dev Clyde*** 
 
-Now the community will decide: should dev try to win the girl or should dev forget Chloe? Participate in weekly "Simp or NoSimp" vote to encourage Clyde to keep his hopes up, or to give up and move on — get over her dude! Each time the community votes SIMP, 1M SORRY get added to Chloe's Trove. Hopefully, with the increasing value of Chloe's Trove, the news will talk and one day capture the attention of Chloe. Or the community votes NO SIMP, 1M SORRY get burned. Community is telling Clyde to get over her and move on.
 
-It's a long shot.
+### 2.1 The Heartbreak Behind the Meme
 
-### Beyond the Story of Chloe + Clyde: A Platform for Digital Apologies
+#### **2.1.1 The Dawn:** *Dog Tokens & a Pinky Promise*
+
+Back in 2020, when SHIB was just beginning its meteoric rise, a young woman named Chloe stood in her kitchen talking to her bestfriend Clyde — a blockchain enthusiast and developer. Laughing at the absurdity of the situation with SHIB, Chloe suggested the two team up to create a meme token called "SORRY". She thought it would be funny and meaningful ticker for a meme token at the same time. 
+
+Always the cunning business woman, Chloe quickly added a condition:
+> "*If you ever make that token, you have to promise me you will give me 1,000,000 SORRY.*
+>
+> "*You have to pinky primise me.*
+>
+> "*Do you promise?*"
+
+Clyde laughed, presenting his outstreched pinky. 
+
+With that single action, their fates were sealed. Yet it wasn't long before tragedy struck the Twin Flames.
+
+#### **2.1.2 The Estrangement:** *Push & Pull of Twin Flames*
+
+As so often happens when men and women try to be friends, Chloe and Clyde's relationship went from a beautiful friendship to a tumultuous romance to a painful estrangement.
+
+For the next four years, their relationship existed in a perpetual "will-they-won't-they" state. Chloe remained loyal, watching from the sidelines as Clyde continued to spurn her advances, rejecting his one chance at true love for the fleeting attention of trashy women and 304s.
+
+[304 calculator pic]
+
+Finally, in a moment of [*who the fuck knows what she was thinking*], Chloe made one last attempt to win Clyde's heart.
+
+She pitched him on their shared future once more, painting a picture of their wedding, their family, and their future growing old together.
+
+#### **2.1.3 The Flippening:** *The Runner Becomes the Chaser*
+
+Surprisingly, this time, Clyde agreed - but the timing had shifted.
+
+Fate has a cruel sense of humor. Whether as karma for years of neglect, because her family would never approve of her marrying a blockchain developer, or because she had truly moved on, Chloe rejected him, turning the tables on the man who had kept her waiting for so long. Dev Clyde was broken hearted.
+
+[WeChat pic "你永远只会说SORRY，但从不改变。" ("You always say SORRY, but never change.")]
+
+#### **2.1.4 The Breakdown:** *Losing Touch with Reality*
+
+For months, Clyde was in a funk. He spent his days gambling, YOLOing his life savings into every CASHTAG crypto-twitter said was hot. Somehow the 100x gains kept hitting. It was the universe's cruel joke. The richer he got, the more he wanted to throw it all away. Dispite his ever increasing wealth, he would spend his nights crying himself to sleep. He was a shell of the man he once was.
+
+Then, one day, he got an idea: "I should eat a bunch of food and get fat. That will show her!"
+
+He was clearly losing his mind.
+
+In a delirious trance, Clyde started scrambling to eat. Muching on anything he could find. Chowing down on whatever was in sight. Frantically grabbing for anything within his reach and stuffing it into his mouth. Hoovering up as much as he could, trying to get fat as quickly as possible.
+
+Fortunately for the still-svelte Clyde, the first thing he grabbed was a first full of magic mushrooms.
+
+He got high.
+
+He got horny.
+
+He got sad.
+
+He got sorry.
+
+He got a new idea.
+
+While lying in bed talking to the spaceman on his ceiling, he shared his story of love, regret, and his pinky promise from all those years ago.
+
+The astronaut cat listened intently, before coughing up a ball of yarn. Dev Clyde instantly knew what it meant.
+
+#### **2.1.5 The Revelation:** *Dev should be deving*
+
+Devastated by the love reversal, Clyde turned to what he knew best - coding. What began as personal therapy and an artistic tribute to Chloe evolved into the SORRY Protocol: a digital monument to his mistake and a desperate hope that if the project gained enough popularity, Chloe might see it and understand it was created for her.
+
+It's a long shot. It's the only shot.
+
+#### **2.1.6 The Promise Kept:** *SORRY Token & Chloe's Trove*
+
+Today, Clyde is making good on his promise from all those years ago.
+
+The SORRY token launches with 1,000,000 SORRY tokens waiting in a special trove for Chloe. The trove is protected by 5 secret questions -- shared secrets from the lovers' pasts.
+
+#### **2.1.7 The Hesitation:** *Maybe this is all a Mistake*
+
+It has been one year since the trip that inspired Clyde to finanlly create SORRY. In that time he's done a lot of healing. Creating SORRY was a fun project. It started as a way to express his love for Chloe but it turned into a way to deal with his grief. Now, on the eve of the SORRY token launch, Clyde is unsure if he actually wants to win Chloe back.
+
+He still wants her with his heart, but in his mind he wonders if it is a good idea.
+
+Dev is broken hearted. He needs the community help.
+
+> *"When I come up with the idea of launching SORRY, one year ago, all I want is win her back. I spend the last year wondering... am I making the biggest mistake of my life? Am I just a pathetic simp? Am I just a sadfaced dog? Am I 区块链舔狗? I don't know. I do know what to do. So I am leaving that up to the community. Do I continue to **SIMP** or **NO SIMP**? I do not know what to do. I need you to help me."*
+>
+> — ***Dev Clyde***
+
+#### **2.1.8 The Solution:** *Simp or No Simp — The Community Decides*
+
+Now the community will decide: should dev try to win the girl or should dev forget Chloe? Participate in weekly "Simp or NoSimp" vote to encourage Clyde to keep his hopes up, or to give up and move on — get over her dude! Each time the community votes **SIMP**, 1M SORRY get added to Chloe's Trove. Hopefully, with the increasing value of Chloe's Trove, the news will talk and one day capture the attention of Chloe. Or the community votes **NO SIMP**, 1M SORRY get burned. Community is telling Clyde to get over her and move on.
+
+
+### 2.2 Beyond the Story of Chloe + Clyde: A Platform for Digital Apologies
 
 SORRY isn't just Clyde's digital apology letter — it is a platform for everyone to share their own stories of love, regret, remorse, and reconciliation. It's a techno-art project. A meme token with utility and novel mechanics, allowing users to:
 
@@ -91,17 +261,18 @@ Is it romantic? Maybe. Is it pathetic? Probably. Is it a love story? Kinda. Is i
 
 It's a story about a guy who fucked up and just wants to say he is sorry. The rest is for you to decide...
 
-### The Significance of "555"
+### 2.3 Numerology and the Significance of "555"
 
 The number "555" holds special cultural significance in the SORRY protocol:
 
-- In Chinese internet slang, "555" represents the sound of crying or sobbing
+- In Chinese online slang, "555" represents the sound of crying or sobbing, similar to "呜呜呜" (wū wū wū) in Mandarin.
 - The first valuable NFT threshold begins at 555 SORRY tokens
 - Token addresses for major system components are deployed to addresses that start and end with 0x555...555
 - Every 555th trove created receives a 555 SORRY rebate
 
 This numerological theming encodes the cultural foundations of apology, grief, and vulnerability directly into the protocol's structure.
 
+Other special numbers are used throughout the protocol. Some hold cultural significance, some are just funny numbers (dev has same sense of humor as Elon Musk). Try to find them all!
 
 ---
 
@@ -251,7 +422,7 @@ Throughout the protocol, the numbers "69", "420", and "555" have special signifi
 - 555 is the number of SORRY required to create a "Sad Dog" NFT
 - 6969 is the number of SORRY required to create an "Apology Dog" NFT
 - 42069 is the number of SORRY required to create a "Sorry Dog" NFT
-- All token addresses and other core contract addresses are deployed to addresses that start and end with 0x555...555
+- All token addresses and other core contract addresses are deployed to addresses that start and end with `0x555...555`
 - Every 555th trove created receives a 555 SORRY rebate/boost
 
 This numerological theming encodes the cultural foundations of apology and vulnerability directly into the protocol's structure.
@@ -260,7 +431,7 @@ This numerological theming encodes the cultural foundations of apology and vulne
 ---
 
 
-## 4. SORRY Protocol Features
+## 4. Protocol Features
 
 To complement the SORRY Dog Token, the SORRY Protocol introduces several additional features:
 1. **TroveNFTs:** On-chain Apologies & Messages -> Answer Secret Questions to Unlock SORRY in Apology Troves
@@ -314,7 +485,7 @@ Answering the questions is a 2-step process, to prevent front-running. This is s
 
 > TODO: Add technical details & contract addresses
 
-### 4.2 Apology Logger and Leaderboards
+### 4.2 Apology Logger & Leaderboards
 
 The SorryLogger serves as the central event tracking system for all protocol activity:
 
@@ -344,7 +515,7 @@ The SorryLogger serves as the central event tracking system for all protocol act
 
 > TODO: Add technical details & contract addresses
 
-### 4.3 Vending Machines
+### 4.3 Liquidity Vending Machines
 
 The SORRY Dog Liquidity Vending Machine is a mechanism to distribute SORRY to the community. It is a simple mechanism to allow the community to purchase SORRY at a fixed price.
 
@@ -374,7 +545,7 @@ Vending Machines will be upgraded to incorporate a decay mechanism. As time pass
 
 > TODO: Add technical details & contract addresses
 
-### 4.4 Governance
+### 4.4 SORRY Governance
 
 SORRY Protocol is not a DAO. Although if we were, we would be called SimpDAO. It is an art project, an attempt to create a social movement, and a to write a love letter through code on an immutable blockchain. 
 
@@ -737,16 +908,53 @@ This proposal implements the capability to securely exchange encrypted messages 
 My Own Messages (MOM) is a standard to create your very own public, always updated, unstoppable, verifiable, message board.
 
 
-## 8. Conclusion
 
-### 8.1 SORRY's "Levels Token Standard" Potential and Future Work
+## 8. Future Applications & Next Steps
 
-The SORRY Protocol's "Levels Token Standard" has the potential to:
+The Levels Token Standard and the SORRY Protocol offer new primitives for developers, creators, and communities. Potential areas for continued exploration include:
 
-1. Create automatic reward card tiers that upgrade as users collect points.
-2. Games: Leveling up or evolving characters or items in a game as they earn XP (think of a Pokemon automatically evolving)
+- **Decentralized Loyalty Programs:** Replace centralized point systems with auto-leveling NFTs (e.g., airline miles, customer loyalty).
+- **Gaming Infrastructure:** Level-based NFTs for in-game XP, item rarity, or character evolution. (eg. Pokemon that evolve as they gain XP and level up)
+- **Content Gating & Social Reputation:** Use levels for access to premium spaces, trust badges, or progressive governance rights.
+- **Real-World Interactions:** Tie levels to proof-of-humanity, voting history, or participation in charitable giving.
+- **On-Chain Rituals:** Build seasonal apology contests, interactive quests, or trove-driven ARGs.
+- **Interchain XP Systems:** Let NFTs evolve as users interact across chains, protocols, and dapps.
+- **AI-powered Story Composers:** Create generative lore and images using SORRY metadata as prompts.
+- **Token-gated access to communities and content:** Simplify the process of granting access to communities with multiple levels of membership and content based on token ownership.
+- **Trivial, scavenger hunts, and password protected onchain vaults:** Create onchain scavenger hunts, based on Sorry's trove, that can only be opened by someone with the correct password/phrase.
+
+**Next Steps:**
+- Finalize SORRY audit framework (at least 2 meme-credible reviewers)
+- Grow Trove creation contests and regional leaderboard games
+- Expand EIP draft submission for Levels Token Standard (LTS)
+- Integrate with 3rd party NFT marketplaces and DAO tools
+- Create a SORRY/Simp DAO
+
+## 9. Conclusion
+
+SORRY is not just a hybrid token standard — it's a movement, a protocol, and a deeply human story encoded in Solidity. By leveraging ERC7631 and DN404-inspired dual contracts, the SORRY Protocol achieves full compatibility with ERC20 and ERC721 standards, while expanding their utility through dynamic, multi-level NFT minting, governance-linked storytelling, and an on-chain apology ecosystem. 
+
+In this paper, we introduced the Levels Token Standard as a flexible, composable architecture that blends fungibility and identity. We showed how tokens can express growth, emotion, social behavior, and narrative progression — from Level 0 to Level 3, from base chain to Ethereum, from a meme to a movement.
+
+SORRY is absurd. It's profound. It's stupid. It's sincere. And it's ready to evolve through community.
+
+Whether you're apologizing for missing someone's birthday, or for dumping your bags on retail at the top, there's a SORRY for that.
 
 
 ---
+<br>
 
 *"Is it a story about a guy who fucked up and just wants to say he is sorry. The rest is for you to decide..."*
+
+
+<br>
+<br>
+
+|***Copyright** [2025<br> The SORRY Labs Collective](https://sorry.dog)*|
+|:-:|
+
+<br>
+
+---
+
+## 10. Appendix
