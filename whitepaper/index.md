@@ -1010,7 +1010,7 @@ The evolution of tokens is happening right now. Web 4.0 will upon `read-write-ex
 
 This combination will unlock a new use case for tokens. Imagine being able to *send* someone a website, an app, an API, a user profile, an AI agent, etc.
 
-> [!IMPORTANT]
+> [!TIP]
 > Imagine a token used to represent a transferable self-contained application. Like bundling an entire app 
 > (user interface, user profile, database, executable logic, subscription, and license all in one) into a token.
 
