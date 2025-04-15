@@ -282,6 +282,9 @@ Other special numbers are used throughout the protocol. Some hold cultural signi
 
 ## 3. Core Technical Design
 
+> [!CAUTION]
+> **None of the contracts have been audited. Use at your own risk.**
+
 ### 3.1 The Levels Token Standard
 
 SORRY introduces a novel token standard that we call the "Levels Token" - a hybrid that combines the fungibility of ERC20 with the unique collectible aspects of ERC721 in a tiered system.
@@ -1007,9 +1010,11 @@ The evolution of tokens is happening right now. Web 4.0 will upon `read-write-ex
 
 This combination will unlock a new use case for tokens. Imagine being able to *send* someone a website, an app, an API, a user profile, an AI agent, etc.
 
+> [!IMPORTANT]
 > Imagine a token used to represent a transferable self-contained application. Like bundling an entire app 
 > (user interface, user profile, database, executable logic, subscription, and license all in one) into a token.
 
+> [!TIP]
 > Imagine a token used to represent an entire game profile. Acting as a pass into a metaverse, 
 > updating in reaction to log events from on-chain activity, across multiple app-chains, activity in a 
 > user's social graph, to other tokens, etc. Unifying login, platform subscriptions, and user profiles across multiple apps, dapps, and games, app-chains.
@@ -1020,7 +1025,8 @@ It's hard to fully imagine the potential use cases that will evolve out of this 
 
 ## 5. Tokenomics & Liquidity
 
-> [!WARNING] This section is under construction. Tokenomics are going to change a lot to move more weight into the vending machines as an early anit-pump mechanism, and to create a shrinking max supply over time.
+> [!WARNING]
+> This section is under construction. Tokenomics are going to change a lot to move more weight into the vending machines as an early anit-pump mechanism, and to create a shrinking max supply over time.
 
 The intent of SORRY is to be a meme token and collectable. It is a love story. It is art through defi. It is code written by a hopeless Romantic Idealist (or a pathetic Simp). It is a sad attempt by dev to say sorry for his mistakes.
 
