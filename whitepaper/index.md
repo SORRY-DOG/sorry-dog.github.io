@@ -1388,19 +1388,16 @@ Whether you're apologizing for missing someone's birthday, or for dumping your b
 
 
 ---
-<br>
 
 *"Is it a story about a guy who fucked up and just wants to say he is sorry. The rest is for you to decide..."*
 
 ---
 
 <br>
-<br>
 
 |***Copyright** 2025<br> [The SORRY Labs Collective][SORRY Website]*|
 |:-:|
 | ![Sorry Dog Floating](./img/sorry-gbl.gif) |
-
 
 <!-- References: -->
 [SORRY Twitter]: https://x.com/sorrydog "SORRY Dog X/Twitter"
