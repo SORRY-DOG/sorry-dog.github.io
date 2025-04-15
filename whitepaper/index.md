@@ -44,7 +44,7 @@ keywords:
 - Protocol
 - Social Movement
 - Story
-version: `0.1.2-250414`
+version: 0.1.2-250414
 date: 2025-04-14
 website: https://sorry.dog
 github: https://github.com/sorry-dog
